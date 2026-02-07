@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница не найдена - Aetherium</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script href="/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/404.css">
+</head>
+<body class="dark">
+    <!-- Background effect -->
+    <div id="background-effect">
+        <div class="grid-pattern"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+    
+    <!-- Main content -->
+    <div id="root" class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-10 border-b border-ros-800 bg-ros-900/80 backdrop-blur-md">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-md flex items-center justify-center overflow-hidden">
+                            <img src="/favicon.png" alt="Aetherium Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold gradient-text">Aetherium</h1>
+                            <p class="text-xs text-ros-600">ALPHA версия</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <a href="/" class="px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md font-medium transition-colors">
+                            Вернуться на главную
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- 404 Content -->
+        <main class="flex-grow flex items-center justify-center px-4 py-16">
+            <div class="text-center max-w-2xl">
+                <div class="mb-8">
+                    <div class="error-number mb-2">404</div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 glitch" data-text="Страница потерялась в эфире">
+                        Страница потерялась в эфире
+                    </h2>
+                    <p class="text-xl text-ros-600 mb-8">
+                        Похоже, вы пытаетесь подключиться к несуществующей странице
+                    </p>
+                </div>
+                
+                <div class="space-y-6 mb-10">
+                    <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm border border-ros-800">
+                        <h3 class="text-xl font-semibold text-white mb-3">⚠️ Возможные причины:</h3>
+                        <ul class="text-ros-600 text-left space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-flux-cyan mr-2">•</span>
+                                <span>Страница была перемещена или удалена</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-flux-cyan mr-2">•</span>
+                                <span>Ошибка в URL-адресе</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-flux-cyan mr-2">•</span>
+                                <span>Временные проблемыккк</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-flux-cyan mr-2">•</span>
+                                <span>Сервер находится на техническом обслуживании</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm border border-ros-800">
+                        <h3 class="text-xl font-semibold text-white mb-3">🚀 Что можно сделать:</h3>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="/" class="btn-primary">
+                                Вернуться на главную
+                            </a>
+                            <a href="https://aetherium.2bd.net" target="_blank" class="px-4 py-2 border border-flux-blue text-flux-blue hover:bg-flux-blue/10 rounded-md font-medium transition-colors">
+                                Официальный сайт
+                            </a>
+                            <a href="https://t.me/Aetherium" target="_blank" class="px-4 py-2 bg-ros-800 hover:bg-ros-700 text-white rounded-md font-medium transition-colors">
+                                Telegram автора
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-ros-800">
+                    <p class="text-ros-600 mb-4">
+                        Если вы считаете, что это ошибка, сообщите об этом автору проекта
+                    </p>
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-ros-800/50">
+                        <span class="w-2 h-2 rounded-full bg-flux-warning mr-2 animate-pulse"></span>
+                        <span class="text-sm">Статус: 404 Not Found</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="mt-12 border-t border-ros-800 py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded-md flex items-center justify-center overflow-hidden">
+                                <img src="/favicon.png" alt="Aetherium Logo" class="w-full h-full object-contain">
+                            </div>
+                            <span class="text-white font-bold">Aetherium</span>
+                            <span class="alpha-badge">ALPHA</span>
+                        </div>
+                        <p class="text-sm text-ros-600 mt-2">Бесплатный доступ в Интернет для граждан РФ</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="https://t.me/Aetherium" target="_blank" class="px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md font-medium transition-colors text-sm">
+                            Telegram проекта
+                        </a>
+                        <a href="https://aetherium.2bd.net" target="_blank" class="px-4 py-2 border border-flux-blue text-flux-blue hover:bg-flux-blue/10 rounded-md font-medium transition-colors text-sm">
+                            Официальный сайт
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-ros-800 text-center text-sm text-ros-600">
+                    <p>TM 2026 AbikusSudo: Aetherium. Проект в стадии активной разработки.</p>
+                    <p class="mt-2">Ошибка 404 - Страница не найдена</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script href="/js/404.js"></script>
+</body>
+</html>

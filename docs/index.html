@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aetherium - Бесплатный доступ в Интернет</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script href="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="dark">
+    <!-- Background effect -->
+    <div id="background-effect">
+        <div class="grid-pattern"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+    
+    <!-- Main content -->
+    <div id="root" class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="sticky top-0 z-10 border-b border-ros-800 bg-ros-900/80 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-flux-cyan hover:text-white transition-colors">О проекте</a>
+                    <a href="#servers" class="text-flux-cyan hover:text-white transition-colors">Серверы</a>
+                    <a href="#subscribe" class="text-flux-cyan hover:text-white transition-colors">Подписка</a>
+                    <a href="#rules" class="text-flux-cyan hover:text-white transition-colors">Правила</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="https://t.me/Aetherium?direct" target="_blank" class="px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md font-medium transition-colors">
+                        Telegram проекта
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+        <!-- Main content area -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- Hero section -->
+                <section class="mb-12 text-center" id="about">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-ros-800/50 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-flux-success mr-2 animate-pulse"></span>
+                        <span class="text-sm">Проект в активной разработке</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        <span class="gradient-text">
+                            <img src="/favicon.png" class="inline-block h-[1em] w-[1em] align-[-0.15em]" alt=""> Aetherium от AbikusSudo
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl text-ros-600 max-w-3xl mx-auto mb-8">
+                        <span class="text-flux-cyan font-semibold">🌐 Aetherium</span> — проект по бесплатному возврату полного доступа в Интернет гражданам РФ
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">🔒</div>
+                                <h3 class="text-xl font-semibold text-white">Конфиденциальность</h3>
+                            </div>
+                            <p class="text-ros-600">
+                                Мы не передаём и не сливаем данные пользователей за границу — конфиденциальность для нас абсолютный приоритет
+                            </p>
+                        </div>
+                        
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">💡</div>
+                                <h3 class="text-xl font-semibold text-white">Наша цель</h3>
+                            </div>
+                            <p class="text-ros-600">
+                                Вернуть гражданам РФ полный и безопасный доступ в интернет <span class="text-flux-success font-semibold">полностью бесплатно</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Advantages section -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center">✨ Преимущества Aetherium</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">✅</div>
+                                <h3 class="text-xl font-semibold text-white">Всегда бесплатно</h3>
+                            </div>
+                            <p class="text-ros-600">Проект финансируется автором*</p>
+                        </div>
+                        
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">📶</div>
+                                <h3 class="text-xl font-semibold text-white">Без ограничений</h3>
+                            </div>
+                            <p class="text-ros-600">Нет ограничений по трафику**</p>
+                        </div>
+                        
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">🔁</div>
+                                <h3 class="text-xl font-semibold text-white">Регулярные обновления</h3>
+                            </div>
+                            <p class="text-ros-600">Постоянное*** обновление протоколов и ключей</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">🚫</div>
+                                <h3 class="text-xl font-semibold text-white">Безопасность данных</h3>
+                            </div>
+                            <p class="text-ros-600">Нет кэширования данных и передачи третьим лицам</p>
+                        </div>
+                        
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="emoji-badge">💬</div>
+                                <h3 class="text-xl font-semibold text-white">Прямая связь</h3>
+                            </div>
+                            <p class="text-ros-600">Доступны личные сообщения с автором для получения личного ключа****</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Rules section -->
+                <section class="mb-12" id="rules">
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center">⚖️ Правила проекта</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="emoji-badge">🚫</div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Не передавать ключи третьим лицам</h4>
+                                    <p class="text-ros-600">Разрешено передавать только ссылку на целую подписку</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="emoji-badge">🚫</div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Не продавать ключи</h4>
+                                    <p class="text-ros-600">Не продавать и не распространять ключи</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="emoji-badge">🚫</div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Не использовать торренты</h4>
+                                    <p class="text-ros-600">Строгий запрет на использование торрент-сетей</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="emoji-badge">🚫</div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Ограничение по объёму</h4>
+                                    <p class="text-ros-600">Не скачивать файлы свыше 100+ ГБ</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="emoji-badge">🚫</div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Соблюдение законов</h4>
+                                    <p class="text-ros-600">Не совершать противоправные действия на территории РФ</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="emoji-badge">📢</div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Распространение</h4>
+                                    <p class="text-ros-600">Распространять можно только ссылку на целую подписку</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Servers & Protocols -->
+                <section class="mb-12" id="servers">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Server types -->
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold text-white mb-6">🖥 Типы серверов</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center p-3 rounded-lg bg-ros-800/50">
+                                    <div class="w-10 h-10 rounded-full bg-flux-blue/20 flex items-center justify-center mr-4">
+                                        <span class="text-flux-blue">✔️</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Обычные</h4>
+                                        <p class="text-sm text-ros-600">Стандартные серверы</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center p-3 rounded-lg bg-ros-800/50">
+                                    <div class="w-10 h-10 rounded-full bg-flux-success/20 flex items-center justify-center mr-4">
+                                        <span class="text-flux-success">✔️</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Авто</h4>
+                                        <p class="text-sm text-ros-600">Автоматический подбор серверов</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center p-3 rounded-lg bg-ros-800/50">
+                                    <div class="w-10 h-10 rounded-full bg-flux-purple/20 flex items-center justify-center mr-4">
+                                        <span class="text-flux-purple">✔️</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Анти-Шатдаун</h4>
+                                        <p class="text-sm text-ros-600">Защищённые от блокировок</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Protocols -->
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold text-white mb-6">🔗 Поддерживаемые протоколы</h2>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="protocol-badge">VLESS (TCP)</span>
+                                <span class="protocol-badge">VLESS (XHTTP)</span>
+                                <span class="protocol-badge">VLESS (gRPC)</span>
+                                <span class="protocol-badge">VMess</span>
+                                <span class="protocol-badge">Shadowsocks</span>
+                                <span class="protocol-badge">Hysteria2</span>
+                            </div>
+                            <div class="mt-6 pt-6 border-t border-ros-800">
+                                <div class="flex items-center">
+                                    <span class="alpha-badge">ALPHA</span>
+                                    <p class="text-ros-600 ml-4">Статус разработки сервиса — тестирование и улучшение</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Subscription section -->
+                <section class="mb-12" id="subscribe">
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center">▶️ Ссылки для подключения</h2>
+                    <p class="text-center text-ros-600 mb-6">✅ Подписка на GitHub (не обновляется при белых списках) в формате UTF-8</p>
+                    
+                    <div class="space-y-6 max-w-3xl mx-auto">
+                        <!-- Subscription URLs -->
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold text-white">Определенные</h3>
+                                <span class="text-xs px-2 py-1 bg-flux-blue/20 text-flux-blue rounded">Рекомендуется</span>
+                            </div>
+                            <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                <code class="text-flux-cyan flex-grow font-mono text-sm truncate">https://sub.autherium.2bd.net/gen</code>
+                                <button class="copy-btn ml-4 px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md text-sm font-medium transition-colors" data-url="https://sub.autherium.2bd.net/gen">
+                                    Копировать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <h3 class="text-xl font-semibold text-white mb-3">Сборник (MEGA)</h3>
+                            <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                <code class="text-flux-cyan flex-grow font-mono text-sm truncate">https://sub.autherium.2bd.net/mega</code>
+                                <button class="copy-btn ml-4 px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md text-sm font-medium transition-colors" data-url="https://sub.autherium.2bd.net/mega">
+                                    Копировать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <h3 class="text-xl font-semibold text-white mb-3">Lite версия</h3>
+                            <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                <code class="text-flux-cyan flex-grow font-mono text-sm truncate">https://sub.autherium.2bd.net/lite</code>
+                                <button class="copy-btn ml-4 px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md text-sm font-medium transition-colors" data-url="https://sub.autherium.2bd.net/lite">
+                                    Копировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <p class="text-ros-600 mb-2">🛠 Список будет пополнятся, следите за сайтом!</p>
+                    </div>
+                </section>
+                <!-- DNS & Disclaimer -->
+                <section class="mb-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- DNS -->
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold text-white mb-6">🌐 Рекомендуемые DNS-серверы</h2>
+                            <div class="space-y-4">
+                                <div class="pt-4 border-t border-ros-800">
+                                    <h4 class="font-semibold text-white mb-2">IPv4:</h4>
+                                    <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                        <code class="text-flux-cyan flex-grow font-mono">Базовый: 77.88.8.8 / 77.88.8.1</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Безопасный: 77.88.8.88 / 77.88.8.2</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Семейный: 77.88.8.7 / 77.88.8.3</code> 
+                                    </div>
+                                    <h4 class="font-semibold text-white mb-2">IPv6:</h4>
+                                    <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                        <code class="text-flux-cyan flex-grow font-mono">Базовый: 2a02:6b8::feed:0ff / 2a02:6b8:0:1::feed:0ff</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Безопасный: 2a02:6b8::feed:bad / 2a02:6b8:0:1::feed:bad</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Семейный: 2a02:6b8::feed:a11 / 2a02:6b8:0:1::feed:a11</code>
+                                    </div>
+                                <div>
+                                    <h4 class="font-semibold text-white mb-2">DoH:</h4>
+                                    <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                        <code class="text-flux-cyan flex-grow font-mono">Базовый: 77.88.8.8:443 / common.dot.dns.yandex.net</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Безопасный: 77.88.8.88:443 / safe.dot.dns.yandex.net</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Семейный: 77.88.8.7:443 / family.dot.dns.yandex.net</code>                                    </div>
+                                </div>
+                                    <h4 class="font-semibold text-white mb-2">DoT:</h4>
+                                    <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                        <code class="text-flux-cyan flex-grow font-mono">Базовый: 77.88.8.8:853 / common.dot.dns.yandex.net</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Безопасный: 77.88.8.88:853 / safe.dot.dns.yandex.net</code>
+                                        <code class="text-flux-cyan flex-grow font-mono">Семейный: 77.88.8.7:853 / family.dot.dns.yandex.net</code>                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white mb-2">Этот DNS принадлежит Яндексу</h4>
+                                    <div class="flex items-center bg-ros-950 rounded-lg p-3 border border-ros-800">
+                                        <code class="text-flux-cyan flex-grow font-mono">Сайт откуда он взят тут: https://dns.yandex.ru</code>
+                                    </div>
+                                </div> 
+                                <div class="pt-4 border-t border-ros-800">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Disclaimer -->
+                        <div class="card-hover bg-ros-900/60 p-6 rounded-xl backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold text-white mb-6">ℹ️ Дисклеймер</h2>
+                            <div class="space-y-4">
+                                <p class="text-ros-600">
+                                    Мы не нарушаем законы РФ, не критикуем власть, не рекламируем VPN.
+                                </p>
+                                <p class="text-ros-600">
+                                    Сервис предоставляет только безопасные прокси-ключи, не предназначенные для обхода блокировок.
+                                </p>
+                                <div class="pt-4 border-t border-ros-800">
+                                    <a href="https://telegra.ph/YUridicheskoe-uvedomlenie-disklejmer-02-02" target="_blank" class="text-flux-cyan hover:text-white transition-colors underline">
+                                        Юридическое уведомление (дисклеймер)
+                                    </a>
+                                    <div class="mt-2">
+                                        <a href="https://github.com/AbikusSudo" target="_blank" class="text-flux-cyan hover:text-white transition-colors">
+                                            Аккаунт на GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="mt-12 border-t border-ros-800 py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <div class="flex items-center space-x-3">
+                            <!-- Логотип в футере -->
+                            <div class="w-8 h-8 rounded-md flex items-center justify-center overflow-hidden">
+                                <img src="/favicon.png" alt="Aetherium Logo" class="w-full h-full object-contain">
+                            </div>
+                            <span class="text-white font-bold">Aetherium</span>
+                            <span class="alpha-badge">ALPHA</span>
+                        </div>
+                        <div class="mt-2">
+                        <p class="text-sm text-ros-600 mt-2">Бесплатный доступ в Интернет для граждан РФ</p>
+                        </div>
+                        <p class="text-sm text-ros-600 mt-2">* Автором и Донатерами.</p>
+                        <p class="text-sm text-ros-600">** В рамках разумного использования и нагрузки серверов (они не наши).</p>
+                        <p class="text-sm text-ros-600">*** В зависимости от возможностей и наличия ресурсов для обновления. Происходит каждые 24 часа.</p>
+                        <p class="text-sm text-ros-600">**** Личные ключи выдаются только при наличии свободных ресурсов и по усмотрению автора.</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="https://t.me/Aetherium" target="_blank" class="px-4 py-2 bg-flux-blue hover:bg-flux-blue/80 text-white rounded-md font-medium transition-colors text-sm">
+                            Telegram проекта
+                        </a>
+                        <a href="https://github.com/AbikusSudo" target="_blank" class="px-4 py-2 border border-flux-blue text-flux-blue hover:bg-flux-blue/10 rounded-md font-medium transition-colors text-sm">
+                            Аккаунт на GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-ros-800 text-center text-sm text-ros-600">
+                    <p>TM 2026 AbikusSudo: Aetherium. Проект в стадии активной разработки. Все услуги предоставляются бесплатно.</p>
+                    <p class="mt-2">Финансируется исключительно автором* проекта.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/common.js"></script>
+</body>
+</html>
